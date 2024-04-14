@@ -1,0 +1,92 @@
+  body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}  
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-solid{
+    color: #dc3545;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+.footer {
+  background-color: #343a40; /* Dark background color */
+  color: #000; /* Black text color */
+}.footer {
+  background-color: #343a40; /* Dark background color */
+  color: #000; /* Black text color */
+}
+
+.footer a {
+  color: #000; /* Links color */
+}
+
+.footer a:hover {
+  color: #666; /* Links color on hover */
+}
+
+.footer ul.list-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer ul.list-inline li {
+  margin: 0 5px; /* Adjust spacing between list items */
+}
+
+.containerr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+
+.card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+object-fit: cover !important;
+}
+.card-body{
+  padding: 0 !important;
+
+}
+.card-text p{
+  font-weight: 700 !important;
+}
+
+.listing-link{
+text-decoration: none;
+}
+
+.card-img-overlay{
+  opacity: 0;
+}
+.card-img-overlay:hover{
+  opacity: 0.3;
+  background-color: white;
+}
+
+.nav-item:hover {
+  transform: scale(1.1); /* Increase size by 10% */
+  transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+

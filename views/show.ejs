@@ -1,0 +1,33 @@
+<% layout("/layouts/boilerplate") %>
+<div class="card" style="max-width: 800px; margin: 0 auto;">
+  <div class="row no-gutters align-items-center">
+    <div class="col-md-4">
+      <img src="<%= listing.image.url %>" class="card-img" alt="Listing Image" style="width: 250px; height: 400px; margin-top: 60px; margin-bottom: 60px;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title" style="font-weight: bold;"><%= listing.title %></h5>
+        <p class="card-text"><%= listing.description %></p>
+        <ul class="list-group list-group-flush">
+          <% if (listing && listing.price !== undefined) { %>
+            <li class="list-group-item">&#8377 <%= listing.price %></li>
+          <% } else { %>
+            <li class="list-group-item">Price not available</li>
+          <% } %>
+          <li class="list-group-item"><%= listing.location %></li>
+          <li class="list-group-item"><%= listing.country %></li>
+        </ul>
+        <br>
+        <a href="/listings/<%= listing._id %>/edit" class="btn btn-primary mt-3">Edit</a>
+        <form method="post" action="/listings/<%= listing._id %>?_method=DELETE" class="d-inline">
+          <button type="submit" class="btn btn-danger mt-3 ml-2">Delete</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  
+  
+  
